@@ -1,0 +1,17 @@
+{
+  "name": "seti-backend-01",
+  "version": "1.0.0",
+  "description": "Projeto para processo seletivo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Marcelino",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.18.1",
+    "nedb": "^1.8.0"
+  }
+}
