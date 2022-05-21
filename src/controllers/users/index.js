@@ -137,7 +137,10 @@ router.put('/:email', async (req, res)=>{
             obj.username = username;
         }
 
-        if(password && valid.password(password)) {
+        if(password) {
+
+            if(!valid.password(password)) return res.status(400).json('Senha deve ter pelo menos 6 caracteres');
+
             const passwordCrypt = await new Promise((resolve, reject) => {
 
                 bcrypt.genSalt(10, function(err, salt) {
